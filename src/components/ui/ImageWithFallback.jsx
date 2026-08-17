@@ -14,6 +14,7 @@ export default function ImageWithFallback({
   alt = '',
   aspect = '4/3',
   fit = 'cover',
+  tone = null,
   className = '',
   imageClassName = '',
   children,
@@ -34,16 +35,43 @@ export default function ImageWithFallback({
     >
       {showPlaceholder ? (
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center gap-2.5 bg-gradient-to-br from-quartz via-quartz/75 to-offwhite"
+          className={
+            'absolute inset-0 flex flex-col items-center justify-center gap-2.5' +
+            (tone ? '' : ' bg-gradient-to-br from-quartz via-quartz/75 to-offwhite')
+          }
+          /* Com "tone", o placeholder assume as cores dominantes da foto
+             que vai entrar ali — a prévia mostra a composição de cores
+             real da página antes de os arquivos existirem. */
+          style={
+            tone
+              ? { backgroundImage: `linear-gradient(140deg, ${tone[0]}, ${tone[1]})` }
+              : undefined
+          }
           role="presentation"
         >
+          {/* Vinheta: sem ela o gradiente lê como cor sólida, não como foto */}
+          {tone ? (
+            <div
+              aria-hidden="true"
+              className="absolute inset-0"
+              style={{
+                background:
+                  'radial-gradient(120% 90% at 50% 35%, transparent 35%, rgba(0,0,0,0.45) 100%)',
+              }}
+            />
+          ) : null}
+
           <ImageIcon
-            className="h-7 w-7 text-dusty"
+            className={`relative h-7 w-7 ${tone ? 'text-white/55' : 'text-dusty'}`}
             strokeWidth={1.25}
             aria-hidden="true"
           />
           {alt ? (
-            <span className="max-w-[75%] text-center font-heading text-[0.6875rem] leading-snug tracking-wide text-rosegold-ink/70">
+            <span
+              className={`relative max-w-[75%] text-center font-ui text-[0.6875rem] leading-snug tracking-wide ${
+                tone ? 'text-white/75' : 'text-rosegold-ink/70'
+              }`}
+            >
               {alt}
             </span>
           ) : null}

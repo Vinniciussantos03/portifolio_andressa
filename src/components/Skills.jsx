@@ -30,7 +30,7 @@ export default function Skills() {
                   />
                 </span>
 
-                <h3 className="mt-5 font-heading text-lg">{group.title}</h3>
+                <h3 className="mt-5 text-xl">{group.title}</h3>
 
                 <ul className="mt-4 space-y-2">
                   {group.items.map((item) => (

@@ -41,7 +41,7 @@ export default function Hero() {
             <motion.h1
               variants={fadeUp}
               transition={transition}
-              className="mt-4 font-display text-5xl leading-[1.05] tracking-tight text-graphite sm:text-6xl md:text-7xl"
+              className="mt-3 font-display text-6xl leading-[1] font-normal text-graphite sm:text-7xl md:text-8xl"
             >
               {profile.firstName}
               <span className="text-rosegold">!</span>
@@ -52,10 +52,10 @@ export default function Hero() {
               transition={transition}
               className="mt-8 max-w-md border-t border-hairline pt-8"
             >
-              <p className="font-heading text-xl leading-snug text-graphite md:text-2xl">
+              <p className="font-display text-2xl leading-snug text-graphite md:text-3xl">
                 {profile.role}
               </p>
-              <p className="mt-1.5 font-heading text-base font-light text-rosegold-ink">
+              <p className="mt-3 font-ui text-[0.75rem] font-normal tracking-[0.18em] text-rosegold-ink uppercase">
                 {profile.subtitle}
               </p>
 
@@ -72,7 +72,7 @@ export default function Hero() {
             >
               <a
                 href="#projetos"
-                className="group inline-flex items-center gap-2 rounded-full bg-rosegold px-7 py-3.5 font-heading text-sm text-white transition-colors duration-300 hover:bg-rosegold-ink"
+                className="group inline-flex items-center gap-2 rounded-full bg-rosegold px-7 py-3.5 font-ui text-sm text-white transition-colors duration-300 hover:bg-rosegold-ink"
               >
                 Ver projetos
                 <ArrowDownRight
@@ -84,7 +84,7 @@ export default function Hero() {
 
               <a
                 href="#contato"
-                className="inline-flex items-center rounded-full border border-hairline px-7 py-3.5 font-heading text-sm text-graphite transition-colors duration-300 hover:bg-quartz"
+                className="inline-flex items-center rounded-full border border-hairline px-7 py-3.5 font-ui text-sm text-graphite transition-colors duration-300 hover:bg-quartz"
               >
                 Fale comigo
               </a>
@@ -101,6 +101,7 @@ export default function Hero() {
             <ImageWithFallback
               src={profile.photo}
               alt={profile.photoAlt}
+              tone={profile.photoTone}
               aspect="3/4"
               className="rounded-[2px] shadow-[0_24px_60px_-32px_rgba(168,91,115,0.35)]"
             />

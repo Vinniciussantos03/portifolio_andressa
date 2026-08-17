@@ -18,7 +18,7 @@ export default function Footer() {
         <a
           href="#inicio"
           aria-label="Voltar ao início"
-          className="group inline-flex items-center gap-2 font-heading text-[0.8125rem] text-slate transition-colors hover:text-rosegold"
+          className="group inline-flex items-center gap-2 font-ui text-[0.8125rem] text-slate transition-colors hover:text-rosegold"
         >
           Ao topo
           <ArrowUp

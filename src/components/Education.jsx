@@ -19,9 +19,9 @@ export default function Education() {
               </span>
 
               <div>
-                <h3 className="font-heading text-xl">{item.course}</h3>
+                <h3 className="text-2xl">{item.course}</h3>
 
-                <p className="mt-1 font-heading text-sm text-rosegold-ink">
+                <p className="mt-1 font-ui text-sm text-rosegold-ink">
                   {item.status}
                 </p>
 

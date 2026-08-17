@@ -8,6 +8,7 @@ export default function ProjectCard({ project }) {
         alt={project.title}
         aspect="4/3"
         fit={project.imageFit ?? 'cover'}
+        tone={project.tone}
         className="rounded-[2px] border border-hairline"
         imageClassName="transition-transform duration-[700ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
       >
@@ -20,22 +21,22 @@ export default function ProjectCard({ project }) {
 
       <div className="mt-5">
         <div className="flex flex-wrap items-center gap-3">
-          <span className="rounded-full bg-quartz px-3 py-1 font-heading text-[0.6875rem] tracking-wide text-rosegold-ink">
+          <span className="rounded-full bg-quartz px-3 py-1 font-ui text-[0.6875rem] tracking-wide text-rosegold-ink">
             {project.tag}
           </span>
           {project.year ? (
-            <span className="font-heading text-[0.6875rem] tracking-wide text-slate/70">
+            <span className="font-ui text-[0.6875rem] tracking-wide text-slate/70">
               {project.year}
             </span>
           ) : null}
         </div>
 
-        <h3 className="mt-3 font-heading text-xl text-graphite transition-colors duration-300 group-hover:text-rosegold-ink">
+        <h3 className="mt-3 text-2xl text-graphite transition-colors duration-300 group-hover:text-rosegold-ink">
           {project.title}
         </h3>
 
         {project.client ? (
-          <p className="mt-0.5 font-heading text-sm font-light text-slate/80">
+          <p className="mt-0.5 font-ui text-sm font-light text-slate/80">
             {project.client}
           </p>
         ) : null}

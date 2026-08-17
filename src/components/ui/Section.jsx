@@ -36,7 +36,7 @@ export default function Section({
             {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
 
             {title ? (
-              <h2 className="mt-4 text-3xl md:text-4xl">{title}</h2>
+              <h2 className="mt-4 text-4xl md:text-5xl">{title}</h2>
             ) : null}
 
             {description ? (

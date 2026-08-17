@@ -8,7 +8,7 @@ export default function About() {
         <div className="grid gap-10 md:grid-cols-[0.35fr_0.65fr] md:gap-16">
           <Reveal>
             <p className="eyebrow">Sobre</p>
-            <h2 className="mt-4 text-3xl leading-tight md:text-4xl">
+            <h2 className="mt-4 text-4xl leading-tight md:text-5xl">
               {profile.bioTitle}
             </h2>
           </Reveal>

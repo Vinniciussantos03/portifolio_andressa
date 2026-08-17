@@ -40,7 +40,7 @@ function ChannelCard({ channel }) {
       </span>
 
       <span className="min-w-0">
-        <span className="block font-heading text-[0.6875rem] tracking-[0.18em] text-slate/70 uppercase">
+        <span className="block font-ui text-[0.6875rem] tracking-[0.18em] text-slate/70 uppercase">
           {channel.label}
         </span>
         <span
@@ -90,7 +90,7 @@ export default function Contact() {
         <Reveal>
           <p className="eyebrow">Contato</p>
 
-          <h2 className="mt-4 text-3xl leading-tight md:text-4xl">
+          <h2 className="mt-4 text-4xl leading-tight md:text-5xl">
             {contact.headline}
           </h2>
 

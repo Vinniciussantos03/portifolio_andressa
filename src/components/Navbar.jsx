@@ -62,7 +62,7 @@ export default function Navbar() {
                 <a
                   href={`#${item.id}`}
                   aria-current={isActive ? 'true' : undefined}
-                  className={`relative font-heading text-[0.8125rem] tracking-wide transition-colors ${
+                  className={`relative font-ui text-[0.8125rem] tracking-wide transition-colors ${
                     isActive
                       ? 'text-rosegold-ink'
                       : 'text-slate hover:text-graphite'
@@ -115,7 +115,7 @@ export default function Navbar() {
                   <a
                     href={`#${item.id}`}
                     onClick={() => setMenuOpen(false)}
-                    className={`block border-b border-hairline py-3.5 font-heading text-sm tracking-wide last:border-b-0 ${
+                    className={`block border-b border-hairline py-3.5 font-ui text-sm tracking-wide last:border-b-0 ${
                       activeId === item.id ? 'text-rosegold-ink' : 'text-slate'
                     }`}
                   >

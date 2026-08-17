@@ -48,8 +48,14 @@ Enquanto `value` for `null`, o card aparece no layout em estado neutro
 
 Salve os arquivos em `public/images/` com os nomes listados em
 [`public/images/README.md`](public/images/README.md). Enquanto um arquivo não
-existir, o site mostra um placeholder em rosa quartzo com a mesma proporção —
-o layout não quebra e não há deslocamento de conteúdo.
+existir, o site mostra um placeholder com a mesma proporção — o layout não
+quebra e não há deslocamento de conteúdo.
+
+O campo opcional `tone: ['#hex', '#hex']` no arquivo de conteúdo pinta esse
+placeholder com as cores dominantes da foto que vai entrar ali, para a prévia
+mostrar a composição de cores real da página. Sem `tone`, o placeholder fica
+em rosa quartzo — o que sinaliza uma foto ainda não escolhida. Depois que os
+arquivos estiverem no lugar, o campo `tone` pode ser removido.
 
 ## Estrutura
 
@@ -102,11 +108,14 @@ animações a um fade simples).
 
 ## Tipografia
 
-Carregada do Google Fonts em `index.html`:
+Carregada do Google Fonts em `index.html`, com três papéis definidos como
+tokens em `src/index.css`:
 
-- **Playfair Display** — apenas no nome do hero e em detalhes editoriais
-- **Poppins** — títulos e interface
-- **Inter** — corpo de texto
+| Token | Fonte | Papel |
+|---|---|---|
+| `font-display` | **Cormorant Garamond** | nome do hero e todos os títulos (`h1`–`h4`) |
+| `font-ui` | **Jost** | navegação, botões, tags, legendas e rótulos |
+| `font-body` | **Inter** | parágrafos |
 
 Se as fontes não carregarem, o site cai para Georgia e a fonte do sistema sem
 quebrar o layout.

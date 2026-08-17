@@ -9,17 +9,19 @@ export const profile = {
   greeting: 'Olá, meu nome é',
   firstName: 'Andressa',
   fullName: 'Andressa Braga',
-  role: 'Publicitária em formação',
-  subtitle: 'Marketing e Comunicação',
+  role: 'Estrategista de Marketing e Comunicação',
+  subtitle: 'Fundadora da Milew Agency',
   location: 'Fortaleza, Ceará',
   // TODO: revisar a biografia com as palavras da própria Andressa.
-  bioTitle: 'Prazer, eu sou a Andressa.',
+  bioTitle: 'Um pouco sobre mim',
   bio: [
-    'Estudo Publicidade e Propaganda e transformo o que aprendo em resultado para marcas reais. Foi essa vontade de colocar a mão na massa que me levou a fundar a Milew Agency, minha agência de marketing.',
-    'Trabalho com social media, construção de marca e cobertura de eventos — de hamburgueria a estúdio de beleza, de feira de e-commerce a festival de cultura pop. Gosto de marca com personalidade, comunicação clara e presença digital que aproxima o público de verdade.',
+    'Fundei a Milew Agency para fazer o que mais gosto: dar presença digital a marcas que têm algo real a dizer. À frente da agência, cuido de estratégia, conteúdo e construção de marca de ponta a ponta.',
+    'Já trabalhei com food service, beleza, e-commerce e grandes eventos de cultura pop — da hamburgueria ao festival, do estúdio de estética à feira nacional. Gosto de marca com personalidade, comunicação clara e presença digital que aproxima o público de verdade.',
+    'Em paralelo, curso Publicidade e Propaganda, o que mantém a teoria sempre colada na prática do dia a dia dos projetos.',
   ],
   photo: '/images/andressa.jpg',
   photoAlt: 'Retrato de Andressa Braga',
+  photoTone: ['#3a2530', '#8b5f4e'],
 }
 
 /* -------------------------------------------------------------------
@@ -63,6 +65,7 @@ export const projects = [
       'Fundação e direção da agência: identidade visual, posicionamento e atendimento às marcas parceiras.',
     image: '/images/milew-logo.png',
     imageFit: 'contain',
+    tone: ['#160e2e', '#6d4bb5'],
   },
   {
     id: 'geek-burger',
@@ -73,6 +76,7 @@ export const projects = [
     description:
       'Gestão de redes sociais e conteúdo para hamburgueria temática, com foco em público geek e movimento na casa.',
     image: '/images/geek-burger.jpg',
+    tone: ['#0d1311', '#2b3a30'],
   },
   {
     id: 'expo-ecomm',
@@ -83,6 +87,7 @@ export const projects = [
     description:
       'Presença e cobertura na maior feira de e-commerce do Brasil, gerando conteúdo e conexões para as marcas atendidas.',
     image: '/images/expo-ecomm.jpg',
+    tone: ['#0a3a6b', '#2f9ad4'],
   },
   {
     id: 'sana',
@@ -93,6 +98,7 @@ export const projects = [
     description:
       'Cobertura do maior evento de cultura pop do Norte e Nordeste, com produção de conteúdo em tempo real.',
     image: '/images/sana.jpg',
+    tone: ['#c2601c', '#f0a54a'],
   },
   {
     id: 'cilios-deluxe',
@@ -113,10 +119,32 @@ export const gallery = {
   title: 'Bastidores',
   description: 'Eventos, marcas e o dia a dia por trás dos projetos.',
   items: [
-    { id: 'g-sana', image: '/images/sana.jpg', caption: 'SANA 2026' },
-    { id: 'g-expo', image: '/images/expo-ecomm.jpg', caption: 'Expo Ecomm 2026' },
-    { id: 'g-burger', image: '/images/geek-burger.jpg', caption: 'Geek Bunker Burger' },
-    { id: 'g-extra', image: '/images/bastidores-01.jpg', caption: null }, // TODO: foto extra
+    {
+      id: 'g-sana',
+      image: '/images/sana.jpg',
+      caption: 'SANA 2026',
+      tone: ['#c2601c', '#f0a54a'],
+    },
+    {
+      id: 'g-expo',
+      image: '/images/expo-ecomm.jpg',
+      caption: 'Expo Ecomm 2026',
+      tone: ['#0a3a6b', '#2f9ad4'],
+    },
+    {
+      id: 'g-burger',
+      image: '/images/geek-burger.jpg',
+      caption: 'Geek Bunker Burger',
+      tone: ['#0d1311', '#2b3a30'],
+    },
+    {
+      id: 'g-milew',
+      image: '/images/milew-logo.png',
+      caption: 'Milew Agency',
+      tone: ['#160e2e', '#6d4bb5'],
+    },
+    // TODO: acrescente novas fotos de bastidores aqui
+    { id: 'g-extra', image: '/images/bastidores-01.jpg', caption: null },
   ],
 }
 
