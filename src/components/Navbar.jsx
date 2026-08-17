@@ -48,7 +48,7 @@ export default function Navbar() {
       >
         <a
           href="#inicio"
-          className="font-display text-lg tracking-tight text-graphite transition-colors hover:text-rosegold"
+          className="font-display text-lg tracking-tight text-graphite transition-colors hover:text-rosegold-ink"
         >
           {profile.fullName}
         </a>

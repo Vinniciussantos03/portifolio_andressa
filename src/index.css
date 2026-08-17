@@ -6,9 +6,11 @@
 ------------------------------------------------------------------- */
 @theme {
   --color-base: #ffffff;
-  --color-offwhite: #fdf8f9;
+  --color-offwhite: #faedf1;
   --color-mist: #fafafc;
-  --color-quartz: #f7e6eb;
+  /* Acompanha o offwhite mais forte: se o quartzo não descer junto, as tags
+     e os círculos de ícone somem contra o fundo da seção. */
+  --color-quartz: #f4dbe3;
   --color-dusty: #d89bae;
   --color-rosegold: #a85b73;
   /* Tom rosé aprovado para texto sobre fundo claro (o dusty reprova AA) */
