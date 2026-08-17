@@ -21,7 +21,6 @@ export const profile = {
   ],
   photo: '/images/andressa.jpg',
   photoAlt: 'Retrato de Andressa Braga',
-  photoTone: ['#3a2530', '#8b5f4e'],
 }
 
 /* -------------------------------------------------------------------
@@ -76,7 +75,6 @@ export const projects = [
     description:
       'Gestão de redes sociais e conteúdo para hamburgueria temática, com foco em público geek e movimento na casa.',
     image: '/images/geek-burger.jpg',
-    tone: ['#0d1311', '#2b3a30'],
   },
   {
     id: 'expo-ecomm',
@@ -87,7 +85,6 @@ export const projects = [
     description:
       'Presença e cobertura na maior feira de e-commerce do Brasil, gerando conteúdo e conexões para as marcas atendidas.',
     image: '/images/expo-ecomm.jpg',
-    tone: ['#0a3a6b', '#2f9ad4'],
   },
   {
     id: 'sana',
@@ -98,7 +95,6 @@ export const projects = [
     description:
       'Cobertura do maior evento de cultura pop do Norte e Nordeste, com produção de conteúdo em tempo real.',
     image: '/images/sana.jpg',
-    tone: ['#c2601c', '#f0a54a'],
   },
   {
     id: 'cilios-deluxe',
@@ -119,32 +115,11 @@ export const gallery = {
   title: 'Bastidores',
   description: 'Eventos, marcas e o dia a dia por trás dos projetos.',
   items: [
-    {
-      id: 'g-sana',
-      image: '/images/sana.jpg',
-      caption: 'SANA 2026',
-      tone: ['#c2601c', '#f0a54a'],
-    },
-    {
-      id: 'g-expo',
-      image: '/images/expo-ecomm.jpg',
-      caption: 'Expo Ecomm 2026',
-      tone: ['#0a3a6b', '#2f9ad4'],
-    },
-    {
-      id: 'g-burger',
-      image: '/images/geek-burger.jpg',
-      caption: 'Geek Bunker Burger',
-      tone: ['#0d1311', '#2b3a30'],
-    },
-    {
-      id: 'g-milew',
-      image: '/images/milew-logo.png',
-      caption: 'Milew Agency',
-      tone: ['#160e2e', '#6d4bb5'],
-    },
-    // TODO: acrescente novas fotos de bastidores aqui
-    { id: 'g-extra', image: '/images/bastidores-01.jpg', caption: null },
+    { id: 'g-sana', image: '/images/sana.jpg', caption: 'SANA 2026' },
+    { id: 'g-expo', image: '/images/expo-ecomm.jpg', caption: 'Expo Ecomm 2026' },
+    { id: 'g-burger', image: '/images/geek-burger.jpg', caption: 'Geek Bunker Burger' },
+    // Para acrescentar fotos, salve o arquivo em public/images/ e copie o
+    // formato acima. O carrossel se ajusta sozinho a quantidade de itens.
   ],
 }
 

@@ -1,26 +1,36 @@
 # Imagens do site
 
-Salve os arquivos nesta pasta usando **exatamente** os nomes abaixo. O site
-já procura por eles — enquanto o arquivo não existir, aparece um placeholder
-elegante em rosa quartzo no lugar (o layout não quebra).
+Os arquivos abaixo são os que o site procura. Enquanto um deles não existir,
+aparece no lugar um placeholder com a mesma proporção — o layout não quebra e
+não há deslocamento de conteúdo.
 
-| Arquivo | Onde aparece | Proporção ideal |
+| Arquivo | Onde aparece | Situação |
 |---|---|---|
-| `andressa.jpg` | Retrato do topo (hero) | vertical, 3:4 (ex. 900×1200) |
-| `milew-logo.png` | Card do projeto Milew Agency | qualquer (exibida inteira, sem corte) |
-| `geek-burger.jpg` | Card Geek Bunker Burger + galeria | horizontal ou vertical, 4:3 |
-| `expo-ecomm.jpg` | Card Expo Ecomm 2026 + galeria | horizontal ou vertical, 4:3 |
-| `sana.jpg` | Card SANA 2026 + galeria | horizontal ou vertical, 4:3 |
-| `cilios-deluxe.jpg` | Card Cílios Deluxe | horizontal ou vertical, 4:3 |
-| `bastidores-01.jpg` | Quarta foto da galeria | quadrada, 1:1 |
+| `andressa.jpg` | Retrato do topo (hero) | ✅ no repositório |
+| `geek-burger.jpg` | Card Geek Bunker Burger + galeria | ✅ no repositório |
+| `expo-ecomm.jpg` | Card Expo Ecomm 2026 + galeria | ✅ no repositório |
+| `sana.jpg` | Card SANA 2026 + galeria | ✅ no repositório |
+| `milew-logo.png` | Card do projeto Milew Agency | ⬜ falta enviar |
+| `cilios-deluxe.jpg` | Card Cílios Deluxe | ⬜ falta enviar |
 
-## Observações
+## Proporções
 
-- Fotos verticais de celular funcionam bem: o site recorta pelo centro
-  (`object-cover`) sem distorcer a imagem.
-- O logo da Milew é exibido por inteiro com respiro em volta, então um PNG
-  com fundo transparente fica melhor que um print da imagem completa.
-- Para trocar, renomear ou acrescentar imagens, edite
-  `src/data/content.js` — todos os caminhos ficam lá.
-- Comprima as fotos antes de subir (idealmente abaixo de 400 KB cada) para
-  o site carregar rápido.
+O recorte é sempre pelo centro (`object-cover`), então fotos verticais de
+celular funcionam bem — só evite deixar o assunto principal na borda.
+
+- **Retrato do hero:** vertical, 3:4 (ex. 900×1200)
+- **Cards de projeto:** 4:3
+- **Galeria:** quadrado, 1:1
+- **Logo da Milew:** exibido por inteiro, sem corte. Um PNG com fundo
+  transparente fica melhor que um print da imagem completa.
+
+## Ao acrescentar novas fotos
+
+1. Salve o arquivo nesta pasta.
+2. Comprima antes de subir, idealmente abaixo de 400 KB. As fotos atuais foram
+   redimensionadas para no máximo 1400 px no maior lado e reencodadas em
+   qualidade 82, o que já é suficiente para telas retina nos tamanhos em que
+   elas aparecem.
+3. Aponte o caminho em `src/data/content.js` — todos os caminhos de imagem
+   ficam lá. Para a galeria, basta copiar o formato de um item existente; o
+   carrossel se ajusta sozinho à quantidade de fotos.

@@ -101,7 +101,6 @@ export default function Hero() {
             <ImageWithFallback
               src={profile.photo}
               alt={profile.photoAlt}
-              tone={profile.photoTone}
               aspect="3/4"
               className="rounded-[2px] shadow-[0_24px_60px_-32px_rgba(168,91,115,0.35)]"
             />

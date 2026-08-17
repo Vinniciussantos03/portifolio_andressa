@@ -106,13 +106,13 @@ export default function Gallery() {
             <figure
               key={item.id}
               data-slide
-              className="group w-[78%] shrink-0 snap-start sm:w-[46%] lg:w-[31.5%]"
+              className="group w-[78%] shrink-0 snap-start sm:w-[58%] lg:w-[46%]"
             >
               <ImageWithFallback
                 src={item.image}
                 alt={item.caption ?? 'Bastidores'}
                 tone={item.tone}
-                aspect="4/5"
+                aspect="1/1"
                 className="rounded-[2px] border border-hairline"
                 imageClassName="transition-transform duration-[700ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
               >
